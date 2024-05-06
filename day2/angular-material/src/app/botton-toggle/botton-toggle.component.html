@@ -1,0 +1,14 @@
+
+<p>button toggle</p>
+
+<mat-button-toggle #toggle checked disabled>click  me</mat-button-toggle>
+
+{{toggle.checked}}
+
+<mat-button-toggle-group #group="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="angular">angular</mat-button-toggle>
+    <mat-button-toggle value="react">react</mat-button-toggle>
+    <mat-button-toggle value="vue">vue</mat-button-toggle>
+</mat-button-toggle-group>
+{{group.value}}
+

@@ -1,0 +1,11 @@
+<div class="example-container">
+    <mat-form-field  class="pass">
+      <mat-label class="inp">Password</mat-label>
+      <mat-icon class="inp-icon">lock</mat-icon>
+      <input matInput [type]="hide ? 'password' : 'text'" >
+      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon style="color: #B9B5B0;">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+  
+  </div>

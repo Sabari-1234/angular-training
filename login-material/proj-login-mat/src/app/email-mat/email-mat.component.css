@@ -1,0 +1,35 @@
+.example-container mat-form-field + mat-form-field {
+    margin-left: 8px;
+    
+  }
+
+  .email{
+    width: 379px;
+
+    height: 83px;
+   
+
+    
+  }
+
+  .inp{
+    margin-left: 33px;
+    color: #B9B5B0;
+   
+  }
+
+  .inp-icon{
+    position: absolute;
+    top: 18px;
+    color: #B9B5B0;
+   
+  }
+
+  input{
+    margin-left: 25px;
+  }
+
+  ::ng-deep .mat-mdc-text-field-wrapper{
+    background-color: transparent !important;
+    border-bottom: none;
+  }

@@ -1,0 +1,18 @@
+<p>side-nav works!</p>
+
+
+<mat-sidenav-container style="height: 100%;">
+
+    //mode :over,side ,push
+    <mat-sidenav mode="side" #side [(opened)]="opened"  style="background-color: blue;width: 25%;">
+            home
+    </mat-sidenav>
+    <mat-sidenav-content >
+            content
+            <button (click)="opened=!opened">toggle button</button>
+
+            <button (click)="side.open()">open</button>
+            <button (click)="side.close()">close</button>
+            <button (click)="side.toggle()">toggle</button>
+    </mat-sidenav-content>
+</mat-sidenav-container>

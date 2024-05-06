@@ -1,0 +1,26 @@
+<p>menu works!</p>
+
+
+<mat-menu #appmenu="matMenu" xPosition="before" yPosition="below">
+    <button mat-menu-item>angular</button>
+    <button mat-menu-item [matMenuTriggerFor]="submenu">react</button>
+</mat-menu>
+<mat-menu #submenu="matMenu" >
+    <button mat-menu-item>angular</button>
+    <button mat-menu-item>react</button>
+</mat-menu>
+
+
+<button [matMenuTriggerFor]="appmenu" style="justify-content: center; margin: 200px;">menu</button>
+
+
+<mat-menu #namemenu="matMenu" >
+    <ng-template matMenuContent let-name="name" let-age="age">
+        <button mat-menu-item>setting</button>
+        <button mat-menu-item>logout{{name+age}}</button>
+    </ng-template>
+    
+</mat-menu>
+
+<button [matMenuTriggerFor]="namemenu" [matMenuTriggerData]="{name:'sabari',age:21}">sabari</button>
+<button [matMenuTriggerFor]="namemenu" [matMenuTriggerData]="{name:'kumar',age:19}">kumar</button>
